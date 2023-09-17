@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1baku7o8tn04"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_cw3wl"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_cw3wl")
+
+[node name="Title" type="Label" parent="."]
+offset_left = 528.0
+offset_top = 72.0
+offset_right = 632.0
+offset_bottom = 98.0
+text = "KVLTFORMER"
+
+[node name="StartBtn" type="Button" parent="."]
+offset_left = 512.0
+offset_top = 320.0
+offset_right = 640.0
+offset_bottom = 351.0
+text = "Start"
+
+[connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]
