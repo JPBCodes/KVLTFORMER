@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d0ytv5emskt4l"
+path="res://.godot/imported/Darkthrone - 8 Bit Mixtape #6- Black Metal - 02 Transilvanian Hunger.ogg-4ca21f970681134ba37018040221209d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Darkthrone - 8 Bit Mixtape #6- Black Metal - 02 Transilvanian Hunger.ogg"
+dest_files=["res://.godot/imported/Darkthrone - 8 Bit Mixtape #6- Black Metal - 02 Transilvanian Hunger.ogg-4ca21f970681134ba37018040221209d.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
