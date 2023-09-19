@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1baku7o8tn04"]
+[gd_scene load_steps=3 format=3 uid="uid://c1baku7o8tn04"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_cw3wl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jt2mr"]
+font_size = 10
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_cw3wl")
@@ -12,11 +15,33 @@ offset_right = 632.0
 offset_bottom = 98.0
 text = "KVLTFORMER"
 
-[node name="StartBtn" type="Button" parent="."]
-offset_left = 512.0
-offset_top = 320.0
-offset_right = 640.0
-offset_bottom = 351.0
+[node name="Label" type="Label" parent="."]
+offset_left = 520.0
+offset_top = 400.0
+offset_right = 634.0
+offset_bottom = 417.0
+text = "Music by 8 Bit Mixtapes"
+label_settings = SubResource("LabelSettings_jt2mr")
+
+[node name="Options" type="VFlowContainer" parent="."]
+offset_left = 505.0
+offset_top = 289.0
+offset_right = 649.0
+offset_bottom = 392.0
+
+[node name="StartBtn" type="Button" parent="Options"]
+layout_mode = 2
 text = "Start"
 
-[connection signal="pressed" from="StartBtn" to="." method="_on_start_btn_pressed"]
+[node name="FullscreenBtn" type="Button" parent="Options"]
+layout_mode = 2
+text = "Toggle Fullscreen"
+
+[node name="QuitBtn" type="Button" parent="Options"]
+layout_mode = 2
+text = "Quit
+"
+
+[connection signal="pressed" from="Options/StartBtn" to="." method="_on_start_btn_pressed"]
+[connection signal="pressed" from="Options/FullscreenBtn" to="." method="_on_fullscreen_btn_pressed"]
+[connection signal="pressed" from="Options/QuitBtn" to="." method="_on_quit_btn_pressed"]
